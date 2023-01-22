@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'barlow',serif;
+}
+.header{
+    background-color: rgba(8, 25, 51,0.7);
+    border: 1px solid black;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+
+}
+
+.header nav ul{
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-around;
+    width: 60vw;
+    height: 15vh;
+    align-items: center;
+    
+}
+.header nav ul li{
+    /* border: 1px solid white; */
+    list-style: none;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'barlow',serif ;
+    font-size: 14px;
+    font-weight: 500; 
+}
+.nav-button{
+    border: none;
+    padding: 15px 20px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: rgb(255, 85, 23);
+    color: white;
+    font-family: 'barlow',serif;
+}
+
+
+/* this is the first image in  main page */
+
+.first-main{
+    background-image:
+    linear-gradient(to left, rgba(12, 20, 66, 0.178), rgba(8, 12, 57, 0.852)),
+    url('h1_hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+    min-height: 900px;
+}
+
+/***********************************************************************
+-------- this is styling for first-main and floating design---------------
+*********************************************************************** */
+
+.first-section{
+    /* background-color: red; */
+    /* border: 2px solid white; */
+    height: 90vh;
+    width:80vw;
+    margin-top: 12em;
+    margin-left: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.parent-fs-tittle{
+    /* border: 1px solid black; */
+    font-size: 8em;
+    /* color: rgb(46, 46, 162); */
+    text-transform: uppercase;  
+    display: inline;
+    line-height: 100px;
+    margin: 30px 0px;
+    position: relative;
+    font-weight: 900;
+
+}
+.fs-tittle1{
+    color:rgb(255, 85, 23);
+    margin-left: 10px;
+}
+.fs-title2{
+    margin-left: 100px ;
+    color:transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+.fs-tittle21{
+    position: absolute;
+    transform: translate(0% ,-100%);
+    color: rgb(255, 85, 23);
+    animation: water 4s ease-in-out infinite;
+}
+@keyframes water{
+    0%,100%{
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50%{
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+} 
+
+.fs-para{
+    /* border: 1px solid black; */
+    text-align: left;
+    width: 64vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    display: inline;
+    align-items: center;
+    font-family: 'teko',serif;
+}
+
+
+/***********************************************************************
+-------- this is styling for service section and griding---------------
+****************************************************************** ***** */
+
+
+/* --------service section */
+
+ .service{
+    min-height: 900px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    
+}
+
+/* ------------service container */
+.service-container{
+    /* background-color: chocolate; */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px; 
+}
+ /* ----------service section tittle( our service) */
+
+.service-tittle{
+    /* background-color: rgb(249, 249, 31); */
+    /* border: 1px solid black; */
+    margin-bottom: 34px;
+}
+.service-tittle h2{
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'teko',serif;
+    text-transform: uppercase;
+}
+
+
+/* service multiple sections in service section */
+
+.service-sections{
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+.section1 .image1 img{
+    width: 100%;
+}
+
+/* particular service section */
+
+/* this is section one */
+.section1, .section2, .section3{
+/* background-color: darkgrey; */
+padding-left: 15px;
+padding-right: 15px;
+}
+.section1 .service-cap{
+    /* background-color: rgb(63, 61, 61); */
+    padding: 20px 30px 20px 30px;
+    margin-bottom: 40px; 
+}
+.section1 .service-cap h4{
+    /* background-color: blueviolet; */
+    margin-bottom: 34px;
+}
+.section1 .service-cap h4 a{
+    text-decoration: none;
+    color: #0e132a;
+    font-size: 25px;
+}
+.section1 .service-cap a{
+    text-decoration: none;
+    color: #0e132a;
+}
+.section1 .service-cap span{
+    font-size: larger;
+}
+
+/* ---this is for section 2 */
+
+.section2 .service-cap{
+    /* background-color: rgb(63, 61, 61); */
+    padding: 20px 30px 20px 30px;
+    margin-bottom: 40px; 
+}
+.section2 .service-cap h4{
+    /* background-color: blueviolet; */
+    margin-bottom: 34px;
+}
+.section2 .service-cap h4 a{
+    text-decoration: none;
+    color: #0e132a;
+    font-size: 25px;
+}
+.section2 .service-cap a{
+    text-decoration: none;
+    color: #0e132a;
+}
+.section2 .service-cap span{
+    font-size: larger;
+}
+
+
+/***********************************************************************
+-------------- this is styling for about section------------------------
+*********************************************************************** */
+.about{
+    /* border: 1px solid red; */
+    min-height: 900px;
+    width: 100%;
+}
+.about-container{
+    /* background-color: darkgrey; */
+    height: 90vh;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between; 
+}
+/* this is left side of about */
+.about-left{
+    /* background-color: rgb(84, 211, 211); */
+    width: 50%;
+    margin-right: 15px;
+    padding-left: 200px;
+}
+.about-left .about-tittle{
+    /* border: 1px solid black; */
+}
+.about-left .about-tittle h2{
+    font-size: 100px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'teko',serif;
+    color: #0e132a;
+    /* background-color: aquamarine; */
+    /* padding: 20px 30px 20px 30px; */
+    padding-bottom: 50px;
+}
+.about-left .about-cap{
+    /* background-color: aquamarine; */
+    padding-right: 170px;
+}
+.about-left .about-cap1{
+    /* border: 1px solid black; */
+    /* padding: 25px 90px 25px 90px; */
+    font-weight: 700;
+    margin-bottom: 44px;
+    line-height: 1.5em;
+}
+.about-left .about-cap2{
+    margin-bottom: 44px;
+    line-height: 1.5em;
+}
+
+.about-btn{
+    padding: 20px 50px 20px 50px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'teko',serif;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: orangered;
+    color: white;
+}
+
+/* this is the right side of about section  */
+.about-right{
+    width: 50%;
+    margin-left: 15px;
+}
+.about-image img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+/***********************************************************************
+-------------- this is styling for project section ------------------------
+*********************************************************************** */
+
+.project{
+    /* border: 1px solid black; */
+    min-height: 1100px;
+    width: 100%;
+}
+.project-container{
+    height: 900px;
+    max-width: 1200px;
+    /* background-color: darkgray; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.project .project-container .project-tittle{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.project .project-container .project-tittle h2{
+    /* border: 1px solid black; */
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'teko',serif;
+}
+.project .project-container .project-tittle .project-nav{
+    /* border: 1px solid black; */
+}
+.project .project-container .project-tittle ul{
+    /* border: 1px solid black; */
+    display: flex;
+}
+.project .project-container .project-tittle ul li{
+    /* border: 1px solid black; */
+    list-style: none;
+    padding: 5px 20px 5px 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color-scheme: grey;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+/* project sections */
+
+.project-sections{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* project individual section */
+
+/* project  first section */
+
+.project1, .project2, .project3, .project4,.project5, .project6{
+    /* background-color: chocolate; */
+    max-width: 33.3333%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.project1 .project1-img{
+
+}
+.project1 .project1-img img, .project2 .project2-img img,.project3 .project3-img img,.project4 .project4-img img,.project5 .project5-img img,.project6 .project6-img img{
+    width: 100%;
+}
+.project1-cap,.project2-cap,.project3-cap,.project4-cap,.project5-cap,.project6-cap {
+    /* background-color: rgb(44, 244, 170); */
+    padding: 20px 60px 20px 30px;
+    margin-bottom: 20px;
+
+}
+.project-sections h4{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: sans-serif
+    
+}
+
+
+/***********************************************************************
+-------------- this is styling for contact section ------------------------
+*********************************************************************** */
+.contact-us-section{
+    background-image: url('https://preview.colorlib.com/theme/constructioncompany/assets/img/gallery/section-bg2.jpg.webp');
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.contact-us-container{
+    /* border: 1px solid  black; */
+    min-height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lets-talk-with-us{
+    /* background-color: darkgrey; */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.lets-talk-with-us .contact-tittle h4{
+    /* background-color: red; */
+    color: white;
+    font-size:60px;
+    font-weight:900;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+    font-family: 'teko';
+}
+.contact-box{
+    width: 66%;
+    margin-left:8.33%;
+}
+.contact-box p{
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+
+}
+.contact-box button{
+    padding: 15px 22px 15px 22px;
+    text-transform: uppercase;
+    color: #0e132a;
+    font-family: 'barlow';
+    font-weight:500 ;
+    font-size: 13px;
+}
+
+/***********************************************************************
+-------------- this is styling for count section ------------------------
+*********************************************************************** */
+
+.count-area{
+    background-color: rgb(249, 92, 14);    
+    max-width:1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* min-height: 200px; */
+    margin-top: -125px;
+}
+.count-item, .count{
+    /* background-color: aquamarine; */
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.count-no, .count-text{
+    /* border: 1px solid black;     */
+}
+.count-no{
+    font-size: 55px;
+    font-family: 'barlow';
+    font-weight: 700;
+    color: white;
+    /* position: relative; */
+}
+.count-no span{
+        /* position:absolute; */
+        position: relative;
+        bottom: 0;
+}
+.count{
+    /* border:2px solid red; */
+    padding: 60px 0px;
+}
+.c imgo
+widthunt-text{
+    /* background-color: grey; */
+    margin-left:20px ;
+}
+.count-text p{
+    font-size: 16px;
+    font-family: 'barlow';
+    font-weight: 200;
+    color: white;
+    text-transform: uppercase;
+    /* margin-bottom: 5px; */
+}
+.count-text h5{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'barlow';
+    color: white;
+}
+
+/***********************************************************************
+-------------- this is styling for team section ------------------------
+*********************************************************************** */
+
+.team-section{
+    /* background-color: aqua; */
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.team-container{
+    max-width: 1200px;
+    /* background-color: grey; */
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 15px; */
+}
+.team-container .team-items .image{
+    margin-bottom: 15px;
+
+}
+.team-tittle{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.team-section .team-tittle h2{
+    font-size: 65px;
+    text-transform: uppercase;
+    font-family: 'teko';
+    font-weight:800;
+    margin-bottom: 50px;
+    color: #0e132a;
+
+}
+.team-items{
+    display: flex;
+    justify-content: space-around;
+}
+.team-item1{
+    /* border: 1px solid black; */
+}
+
+
+/* team caption */
+.team-caption{
+    /* background-color: white; */
+}
+
+.team-caption span{
+    display: block;
+    /* border: 1px solid red; */
+    font-size: 13px;
+    font-family: 'teko';
+    font-weight: 600;
+    color: orangered;    
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.team-caption h3{
+    text-transform: capitalize;
+    color: #0e132a;
+    font-weight: 800;
+    font-size: 23px;
+} 
+
+
+/***********************************************************************
+-------------- this is styling for testimonial section ------------------------
+*********************************************************************** */
+
+.testimonial-section{
+    width: 100%;
+    background: #00235b;
+    padding-top: 157px;
+    padding-bottom: 157px;
+
+}
+.testimonial-section .testimonial-container{
+    
+    color: #fff;
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;   
+
+}
+
+.testimonial-tittle{
+    /* background-color: #00115e; */
+    /* border: 1px solid white; */
+    margin-bottom: 65px;
+}
+
+ .testimonial-tittle h2{
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 800;
+    font-family: 'teko';
+    color: white;   
+
+}
+
+.testimonial-text-section{
+    padding-left: 100px;
+}
+
+.testimonial-text-section p{
+    font-size: 17px;
+    /* border: 1px solid white; */
+    opacity: 0.6;
+    line-height: 1.5em;
+    margin-bottom:50px ;
+}
+
+
+.testimonial-caption{
+    border-left: 2px solid orangered;
+    display: flex;
+    padding-left: 20px;
+    line-height: 2em;
+}
+.testimonial-caption h3{
+    font-size: 15px;
+    font-family: 'barlow';
+    font-weight: 500;
+
+}
+
+.testimonial-caption p{
+    font-size: 15px;
+    font-family: 'barlow';
+    opacity: 0.4;
+    margin-bottom: 0px;
+
+}
+
+/***********************************************************************
+-------------- this is styling for News section ------------------------
+*********************************************************************** */
+
+.news-section{
+    width: 100%;
+    /* background-color: grey; */
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.news-container{
+    /* color: #fff; */
+    /* border: 2px solid red; */
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;  
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+.news-tittle h2{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: 'teko';
+    font-weight:800;
+    margin-bottom: 50px;
+    color: #0e132a;
+
+}
+
+.news-bar{
+    /* border: 1px solid black; */
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.news1{
+    /* border: 1px solid black; */
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.news1-content{
+    background-color: #00235b;
+}
+ .news-caption{
+    padding: 45px 57px 45px 57px;
+    color: white;
+}
+.news-caption p{
+    color: white;
+    font-size: 16px;
+    font-family: 'barlow';
+    font-weight: 200;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+.news-caption h3 a{
+    /* border: 1px solid black; */
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: 'barlow';
+    text-transform: capitalize;
+    line-height: 1.5em;
+    margin-bottom: 17px;
+    display: block;
+
+}
+.news-caption a{
+    /* border: 1px solid black; */
+    text-decoration: none;
+    color: orangered;
+    text-transform: uppercase;
+    
+} 
+
+/***********************************************************************
+-------------- this is styling for Footer section ------------------------
+*********************************************************************** */
+
+footer{
+    margin-top:150px ;
+
+}
+.main-footer{
+    background-color: #070b11;
+    
+}
+
+.footer-container{
+    /* border: 1px solid white; */
+    
+    max-width: 1200px;
+    padding-top: 130px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-column{
+    display: flex;
+
+}
+.footer-caption{
+    /* border: 1px solid red; */
+    color: white;
+    max-width: 33.33%;
+}
+.footer-logo{
+    margin-bottom: 30px;
+}
+.footer-caption p{
+    /* padding: 10px 15px 10px 15px; */
+    padding-right: 25px;
+    opacity: 0.65;
+    font-weight: 200;
+}
+
+
+/* quick links */
+.quick-links {
+    /* border: 1px solid white; */
+    color: white;
+    max-width: 16.66%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.quick-links h2{
+    margin-bottom: 30px; 
+    font-size: 35px;
+    font-family: 'teko';
+    font-weight: 500;
+}
+.quick-links ul{
+    list-style: none;
+}
+.quick-links ul li{
+    padding-bottom: 20px;
+    opacity: 0.65;
+    font-weight: 200;
+    
+}
+
+.footer-contact{
+    /* border: 1px solid white; */
+    color: white;
+    max-width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.footer-contact h2{
+    margin-bottom: 30px;  
+    font-size: 35px;
+    font-family: 'teko';
+    font-weight: 500;
+}
+.footer-address{
+    line-height: 1.9em;
+
+}
+.footer-contact p{
+    padding-bottom: 20px;
+    opacity: 0.65;
+    font-weight: 200;
+
+}
+
+
+
+.footer-form-map{
+    /* border: 1px solid white; */
+    max-width: 25%;
+}
+.footer-map img{
+    width: 100%;
+
+}
+.footer-copy-right{
+    /* border: 1px solid white; */
+    color: white;
+    padding-bottom: 20px;
+    opacity: 0.65;
+    font-weight: 200;
+
+}
